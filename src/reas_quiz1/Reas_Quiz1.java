@@ -5,6 +5,9 @@
  */
 package reas_quiz1;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  *
  * @author Student
@@ -15,7 +18,30 @@ public class Reas_Quiz1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("sdfewfsdfwef");
+       Scanner scn = new Scanner(System.in);
+        System.out.println("Enter the Elements to Sort: ");
+        int size = scn.nextInt();
+        
+        int Arr[] = new int [size];
+        System.out.println("The elements you want to sort: "+ size);
+        for (int i = 0; i < size; i++) {
+            Arr[i] = scn.nextInt();
+            
+        }
+        for(int number: Arr) {
+            System.out.println("the elements are: "+ number);
+            
+           
+           
+        }
+        Arrays.sort(Arr);
+        System.out.println("The Elements in sorted in ascending orders are: ");
+            for (int number : Arr) {
+                System.out.println(+ number);
+        }
+        }
+        
     }
     
-}
+    
+
