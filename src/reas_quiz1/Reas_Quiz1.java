@@ -18,7 +18,7 @@ public class Reas_Quiz1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Scanner scn = new Scanner(System.in);
+       Scanner scn = new Scanner(System.in) ;
         System.out.println("Enter the Elements to Sort: ");
         int size = scn.nextInt();
         
